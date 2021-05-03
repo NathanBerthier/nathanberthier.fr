@@ -32,14 +32,19 @@ a:hover {
 	font-size: 25px;
 	text-align: center;
 }
-
-/* --- Design --- */
-.navbar {
+nav {
 	height: 12vh;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
+footer {
+	background: linear-gradient(10deg, rgba(2,13,24,1) 0%, rgba(7,24,44,1) 30%, rgba(7,33,66,1) 100%);
+	height: 12vh;
+}
+
+/* --- Design --- */
+
 #name {
 	font-size: 18px;
 	text-align: center;
@@ -65,23 +70,6 @@ a:hover {
 	grid-template-columns: repeat(12, [col-start] 1fr);
 	grid-gap: 10px;
 }
-#card-selector {
-	display: flex;
-	align-items: center;
-	grid-column: col-start / span 2;
-}
-.card-selector-line {
-	height: 2px;
-	width: 30px;
-	margin: 20px 0px 0px 33px;
-	background-color: white;
-}
-.card-selector-line.active{
-	height: 2px;
-	width: 50px;
-	margin: 20px 0px 0px 33px;
-	background-color: white;
-}
 #card-text {
 	position: relative;
 	grid-column: col-start 3 / span 3 ;
@@ -105,6 +93,66 @@ a:hover {
 #card-img {
 	height: 80vh;
 	grid-column: col-start 7 / span 4;
+}
+.about {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+	background-color: white;
+	color: black;
+}
+#about-titre {
+	grid-column: 3;
+  	grid-row: 1;
+}
+#about-text {
+	margin: 20px 0px 5px 0px;
+	text-align: center;
+}
+#about-line {
+	height: 4px;
+	border-radius: 2px;
+	width: 280px;
+	background-color: #ff4d5a;
+}
+#about-card {
+	grid-column: 3;
+  	grid-row: 2 / 4;
+}
+#about-card-avatar {
+	height: 120px;
+	width: 120px;
+	margin: 0px 80px;
+	border-radius: 50%;
+	background-color: black;
+	display: flex;
+	align-items: center;
+}
+#about-card-text {
+	text-align: justify;
+}
+#about-comp {
+	grid-column: 5 / 10;
+  	grid-row: 1 / 6;
+	display: flex;
+	justify-content: space-around;
+}
+#about-comp {
+	margin-top: 50px;
+}
+.about-comp-tools {
+
+}
+.about-comp-tools-img {
+	height: 80px;
+	width: 80px;
+}
+.about-comp-tools-titre {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-weight: bolder;
 }
 
 /* --- Responsive Grid --- */
