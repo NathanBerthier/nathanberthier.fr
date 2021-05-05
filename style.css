@@ -119,7 +119,7 @@ footer {
 }
 #about-card {
 	grid-column: 3;
-  	grid-row: 2 / 4;
+  	grid-row: 2 / 6;
 }
 #about-card-avatar {
 	height: 120px;
@@ -166,12 +166,12 @@ footer {
 	margin: 0px;
 	position: relative;
 	top: -1px;
-	border-radius: 1px;
+	border-radius: 2px;
 }
 #about-comp {
 	width: 520px;
 	grid-column: 5 / 10;
-  	grid-row: 2 / 3;
+  	grid-row: 2;
 	display: flex;
 	justify-content: space-around;
 }
@@ -181,6 +181,7 @@ footer {
 	font-size: 15px;
 	padding: 5px;
 	border-radius: 3px;
+	width: 107px;
 }
 .about-comp-link:hover {
 	background-color: rgb(80, 80, 80);
@@ -195,6 +196,13 @@ footer {
 	margin-top: 5px;
 	margin-bottom: 0px;
 	font-weight: bolder;
+}
+#second-about-comp {
+	width: 520px;
+	grid-column: 5 / 10;
+  	grid-row: 3;
+	display: flex;
+	justify-content: space-around;
 }
 
 /* --- Responsive Grid --- */
@@ -234,5 +242,44 @@ footer {
 		grid-column: col-start 3 / span 3;
 		grid-row: 2;
 		height: 35vh;
+	}
+	#about-line {
+		width: 650px;
+	}
+	#about-titre {
+		grid-column: 3 / 11;
+	}
+	#about-card {
+		grid-column: 3 / 11;
+	  	grid-row: 2 / 6;
+	}
+	#about-card-avatar {
+		height: 150px;
+		width: 150px;
+		margin: 20px 0px;
+	}
+	#about-card-text {
+		font-size: 12px;
+	}
+	#about-card-text-contacteme {
+		font-size: 42px;
+	}
+	#tools-title {
+		grid-column: 3 / 11;
+	  	grid-row: 6;
+	  	width: 650px;
+	}
+	#tools-title-line {
+  		width: 650px;
+	}
+	#about-comp {
+		width: 650px;
+		grid-column: 3 / 11;
+	  	grid-row: 7;
+	}
+	#second-about-comp {
+		width: 650px;
+		grid-column: 3 / 11;
+	  	grid-row: 8;
 	}
 }
