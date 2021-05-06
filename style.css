@@ -40,7 +40,6 @@ nav {
 }
 footer {
 	background: linear-gradient(10deg, rgba(2,13,24,1) 0%, rgba(7,24,44,1) 30%, rgba(7,33,66,1) 100%);
-	height: 12vh;
 }
 
 /* --- Design --- */
@@ -204,6 +203,17 @@ footer {
 	display: flex;
 	justify-content: space-around;
 }
+footer div {
+	height: 12vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+footer h2 {
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 20px;
+}
 
 /* --- Responsive Grid --- */
 
@@ -290,5 +300,11 @@ footer {
 	.about-comp-link:hover {
 		background-color: white;
 		color: black;
+	}
+	footer div {
+		height: 10vh;
+	}
+	footer h2 {
+		font-size: 22px;
 	}
 }
