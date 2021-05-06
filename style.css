@@ -4,7 +4,6 @@ body {
 	margin: 0px;
 	font-family: 'Roboto', sans-serif;
 	color: white;
-	background: rgb(2,13,24);
 	background: linear-gradient(10deg, rgba(2,13,24,1) 0%, rgba(7,24,44,1) 30%, rgba(7,33,66,1) 100%);
 }
 h1, h2, h3 {
@@ -39,7 +38,8 @@ nav {
 	justify-content: space-between;
 }
 footer {
-	background: linear-gradient(10deg, rgba(2,13,24,1) 0%, rgba(7,24,44,1) 30%, rgba(7,33,66,1) 100%);
+	background: white;
+	color: black;
 }
 
 /* --- Design --- */
@@ -203,6 +203,26 @@ footer {
 	display: flex;
 	justify-content: space-around;
 }
+#card-site {
+	background: linear-gradient(10deg, rgba(2,13,24,1) 0%, rgba(7,24,44,1) 30%, rgba(7,33,66,1) 100%);
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+}
+#card-site-titre {
+	grid-column: 3 / 11;
+  	grid-row: 1;
+  	text-align: center;
+  	width: 957px;
+}
+#card-site-line {
+	height: 4px;
+	width: 957px;
+	background-color: #ff4d5a;
+	border-radius: 2px;
+}
 footer div {
 	height: 12vh;
 	display: flex;
@@ -213,6 +233,9 @@ footer h2 {
 	font-size: 12px;
 	margin: 0px;
 	margin-left: 20px;
+}
+footer .social-icon a {
+	color: black;
 }
 
 /* --- Responsive Grid --- */
