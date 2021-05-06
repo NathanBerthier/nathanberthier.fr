@@ -249,6 +249,9 @@ footer {
 	#about-titre {
 		grid-column: 3 / 11;
 	}
+	#about-text {
+		font-size: 70px;
+	}
 	#about-card {
 		grid-column: 3 / 11;
 	  	grid-row: 2 / 6;
@@ -259,9 +262,10 @@ footer {
 		margin: 20px 0px;
 	}
 	#about-card-text {
-		font-size: 12px;
+		font-size: 15px;
 	}
 	#about-card-text-contacteme {
+		margin-top: 40px;
 		font-size: 42px;
 	}
 	#tools-title {
@@ -281,5 +285,6 @@ footer {
 		width: 650px;
 		grid-column: 3 / 11;
 	  	grid-row: 8;
+	  	margin-bottom: 50px;
 	}
 }
