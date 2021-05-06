@@ -287,4 +287,8 @@ footer {
 	  	grid-row: 8;
 	  	margin-bottom: 50px;
 	}
+	.about-comp-link:hover {
+		background-color: white;
+		color: black;
+	}
 }
