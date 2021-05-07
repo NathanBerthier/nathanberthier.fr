@@ -42,6 +42,9 @@ footer {
 	background: white;
 	color: black;
 }
+.active {
+	display: block !important;
+}
 
 /* --- Design --- */
 
@@ -203,6 +206,60 @@ footer {
   	grid-row: 3;
 	display: flex;
 	justify-content: space-around;
+}
+#carousel {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+#card-carousel {
+	background-color: linear-gradient(10deg, rgba(2,13,24,1) 0%, rgba(7,24,44,1) 30%, rgba(7,33,66,1) 100%);
+}
+#carousel img {
+	height: 70vh;
+	display: none;
+	margin: 50px 0px;
+	border-radius: 5px;
+}
+#right-buttun {
+	height: 60px;
+	width: 60px;
+	background-color: white;
+	border-radius: 50%;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 20px;
+	border-width: 0px;
+	transition-property: background-color;
+	transition-duration: 400ms;
+	transition-timing-function: ease;
+
+}
+#left-buttun {
+	height: 60px;
+	width: 60px;
+	background-color: white;
+	border-radius: 50%;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 20px;
+	border-width: 0px;
+	transition-property: background-color;
+	transition-duration: 400ms;
+	transition-timing-function: ease;
+
+}
+#right-buttun:hover {
+	background-color: rgb(180, 180, 180);
+	color: white;
+}
+#left-buttun:hover {
+	background-color: rgb(180, 180, 180);
+	color: white;
 }
 footer div {
 	height: 12vh;
