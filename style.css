@@ -207,6 +207,20 @@ footer {
 	display: flex;
 	justify-content: space-around;
 }
+#carousel-titre {
+	display: flex;
+	justify-content: space-around;
+}
+#carousel-titre h1 {
+	text-align: center;
+	margin: 20px 0px 5px 0px;
+}
+#carousel-titre-line {
+	height: 4px;
+	border-radius: 2px;
+	width: 390px;
+	background-color: #ff4d5a;
+}
 #carousel {
 	display: flex;
 	align-items: center;
@@ -367,6 +381,24 @@ footer .social-icon a {
 	}
 	footer h2 {
 		font-size: 22px;
+	}
+	#carousel img {
+		height: 20vh;
+		border-radius: 5px;
+	}
+	#right-buttun:hover {
+		background-color: white;
+		color: black;
+	}
+	#left-buttun:hover {
+		background-color: white;
+		color: black;
+	}
+	#carousel-titre h1 {
+		font-size: 50px;
+	}
+	#carousel-titre-line {
+		width: 572px;
 	}
 }
 
