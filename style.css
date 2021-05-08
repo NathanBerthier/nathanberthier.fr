@@ -117,7 +117,7 @@ footer {
 #about-line {
 	height: 4px;
 	border-radius: 2px;
-	width: 280px;
+	width: auto;
 	background-color: #ff4d5a;
 }
 #about-card {
@@ -218,7 +218,7 @@ footer {
 #carousel-titre-line {
 	height: 4px;
 	border-radius: 2px;
-	width: 390px;
+	width: auto;
 	background-color: #ff4d5a;
 }
 #carousel {
@@ -328,9 +328,6 @@ footer .social-icon a {
 		grid-row: 2;
 		height: 35vh;
 	}
-	#about-line {
-		width: 650px;
-	}
 	#about-titre {
 		grid-column: 3 / 11;
 	}
@@ -396,9 +393,6 @@ footer .social-icon a {
 	}
 	#carousel-titre h1 {
 		font-size: 50px;
-	}
-	#carousel-titre-line {
-		width: 572px;
 	}
 }
 
