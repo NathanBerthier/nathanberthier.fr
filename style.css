@@ -229,7 +229,7 @@ footer {
 #card-carousel {
 	background-color: linear-gradient(10deg, rgba(2,13,24,1) 0%, rgba(7,24,44,1) 30%, rgba(7,33,66,1) 100%);
 }
-#carousel div a img {
+.carousel-img {
 	height: 70vh;
 	display: none;
 	margin: 50px 0px;
@@ -382,7 +382,7 @@ footer .social-icon a {
 	footer h2 {
 		font-size: 22px;
 	}
-	#carousel div a img {
+	.carousel-img {
 		height: 20vh;
 		border-radius: 5px;
 	}
