@@ -345,6 +345,7 @@ footer .social-icon a {
 		height: 150px;
 		width: 150px;
 		margin: 20px 0px;
+	    background-size: 165px;
 	}
 	#about-card-text {
 		font-size: 15px;
