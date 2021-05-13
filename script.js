@@ -1,32 +1,8 @@
 var i = 1;
-const nbImages = 2;
+const nbImages = 3;
 
 function leftButton() {
-	var id = "img" + i;
-	id.toString();
-	
-	if (i > 1) {
-		removeClass(id);
-		
-		i -= 1;
-		id = "img" + i;
-		id.toString();
-
-		addClass(id);
-	} else {
-		if (i < nbImages) {
-			removeClass(id);
-			
-			i += 1;
-			id = "img" + i;
-			id.toString();
-
-			addClass(id);
-		}
-	}
-}
-
-function rightButton() {
+	j = 0;
 	var id = "img" + i;
 	id.toString();
 
@@ -39,15 +15,37 @@ function rightButton() {
 
 		addClass(id);
 	} else {
-		if (i > 1) {
-			removeClass(id);
-			
-			i -= 1;
-			id = "img" + i;
-			id.toString();
+		removeClass(id);
+		
+		i = 1;
+		id = "img" + i;
+		id.toString();
 
-			addClass(id);
-		}
+		addClass(id);
+	}
+}
+
+function rightButton() {
+	j = 0;
+	var id = "img" + i;
+	id.toString();
+
+	if (i < nbImages) {
+		removeClass(id);
+		
+		i += 1;
+		id = "img" + i;
+		id.toString();
+
+		addClass(id);
+	} else {
+		removeClass(id);
+		
+		i = 1;
+		id = "img" + i;
+		id.toString();
+
+		addClass(id);
 	}
 }
 
@@ -68,4 +66,12 @@ function addClass(id) {
 	if (arr.indexOf(name) == -1) {
 		element.className += " " + name;
 	}
+}
+
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
 }
