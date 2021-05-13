@@ -129,7 +129,10 @@ footer {
 	width: 120px;
 	margin: 0px 80px;
 	border-radius: 50%;
-	background-color: black;
+	background-image: url(images/nathan.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 145px;
 	display: flex;
 	align-items: center;
 }
