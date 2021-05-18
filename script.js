@@ -6,10 +6,10 @@ function leftButton() {
 	var id = "img" + i;
 	id.toString();
 
-	if (i < nbImages) {
+	if (i > 1) {
 		removeClass(id);
 		
-		i += 1;
+		i -= 1;
 		id = "img" + i;
 		id.toString();
 
@@ -17,7 +17,7 @@ function leftButton() {
 	} else {
 		removeClass(id);
 		
-		i = 1;
+		i = nbImages;
 		id = "img" + i;
 		id.toString();
 
